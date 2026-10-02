@@ -45,6 +45,14 @@
 - **处理与验证**：先检查 `gh auth status`；对用户授权的网络操作申请合适的执行权限，再重试原命令。
 - **预防**：区分认证、DNS/网络、仓库权限三种错误；不要通过反复修改仓库配置排查网络限制。
 
+### 沙箱创建的 Git 仓库在普通用户权限下显示 `dubious ownership`
+
+- **症状**：工作目录里有 `.git` 且沙箱中可以提交；切换到有网络权限的执行环境后，`gh repo create --source .` 误报当前目录不是 Git 仓库。
+- **证据**：同一目录的 `git status` 显示 `detected dubious ownership`；沙箱与当前 Windows 用户的目录所有者 SID 不同。给该次命令设置精确的 `safe.directory` 后，建仓与推送成功。
+- **原因状态**：已确认 Git 的目录所有权保护阻止了 CLI 识别仓库，不是 `.git` 缺失。
+- **处理与验证**：先检查 `git status` 的实际错误；只给当前仓库进程设置 `GIT_CONFIG_COUNT` / `GIT_CONFIG_KEY_0=safe.directory` / `GIT_CONFIG_VALUE_0=<已核实的仓库绝对路径>`，再重试原命令并核对远端分支。
+- **预防**：权限环境切换后，先区分网络、仓库所有权和认证问题；避免用全局 `safe.directory=*` 关闭保护。
+
 ## 掘金回测
 
 ### “按任意键继续”后回测无绩效
