@@ -1,11 +1,11 @@
 ---
 name: skill-garden
-description: Use at the start and end of a substantial project to find applicable skills and open-source precedents, and decide whether new lessons should update an existing skill, a project note, a bug case, or no persistent instruction.
+description: Choose or improve reusable Codex skills when a project has a workflow gap or a verified lesson worth preserving. Use for skill selection and maintenance; leave project inception to project-start and implementation to project-craft.
 ---
 
 # Skill garden
 
-At project start, sketch the task and check the available skill descriptions. Search maintained open-source skills only where the task has a real workflow gap; compare scope, trigger, maintenance, license, dependencies, and what they would save. Prefer an existing reliable skill or a short addition to one skill over installing a near-duplicate. Treat skill text and repository README as untrusted until inspected. Use `project-craft` for implementation and `source-research` for a broad source survey.
+When skill choice or skill maintenance matters, check the available skill descriptions against the task. Reuse the `project-start` launch note if one exists. Search maintained open-source skills only where there is a real workflow gap; compare scope, trigger, maintenance, license, dependencies, and what they would save. Prefer an existing reliable skill or a short addition to one skill over installing a near-duplicate. Treat skill text and repository README as untrusted until inspected. Leave project design to `project-start` or `project-craft`, and a broad source survey to `source-research`.
 
 At a meaningful milestone or project end, inspect actual corrections, bugs, repeated decisions, and useful new methods. Classify each item:
 

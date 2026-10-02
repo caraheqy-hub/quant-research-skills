@@ -1,16 +1,21 @@
-# Quant research skills
+# Personal project skills
 
-Six small, self-authored Codex skills for readable research software, careful factor experiments, evidence-based investigation, writing, and a reusable debugging notebook. These are working methods, not datasets or trading signals.
+Eleven self-authored Codex skills for personal engineering and research projects. A project starts with a shared decision workflow, then uses the domain workflow that fits its main uncertainty. Each skill is a method, not a dataset, trading signal, or guarantee of results.
 
-| Skill | When to use it |
-| --- | --- |
-| [`project-craft`](project-craft/SKILL.md) | Plan a substantial project, check existing tools and open source, write the smallest clear implementation, verify and deliver it. |
-| [`factor-mining`](factor-mining/SKILL.md) | Move a brokerage report, paper, or factor idea into a time-aware, cost-aware, auditable experiment. |
-| [`debug-ledger`](debug-ledger/SKILL.md) | Investigate a failure using evidence, then record a concise reusable case; see the [case notebook](debug-ledger/references/cases.md). |
-| [`skill-garden`](skill-garden/SKILL.md) | At project boundaries, find useful skills and classify lessons so the skill library improves without becoming cluttered. |
-| [`source-research`](source-research/SKILL.md) | Plan and synthesize a broad web investigation with primary sources, dates, contradiction checks, and concise citations. |
-| [`bilingual-writing`](bilingual-writing/SKILL.md) | Edit Chinese or English in either an evidence-led research voice or a restrained literary voice. |
+| Stage | Skill | Use |
+| --- | --- | --- |
+| Start | [`project-start`](project-start/SKILL.md) | Define the deliverable, survey literature and existing work, choose a domain, and decide whether a new domain is justified. |
+| Domain | [`quant-projects`](quant-projects/SKILL.md) | Route quantitative finance work by research question, asset, and platform. |
+| Domain | [`agent-development`](agent-development/SKILL.md) | Build and refine tool-using agents. |
+| Domain | [`llm-finetuning`](llm-finetuning/SKILL.md) | Prepare data, train adapters or weights, and compare against a base model. |
+| Domain | [`ai-system-evaluation`](ai-system-evaluation/SKILL.md) | Compare agent, model, and related application quality, latency, resources, and cost. |
+| Focused | [`factor-mining`](factor-mining/SKILL.md) | Turn a factor source into a time-aware, cost-aware experiment. |
+| Shared | [`project-craft`](project-craft/SKILL.md) | Implement and verify a substantial software project after the project decision. |
+| Shared | [`source-research`](source-research/SKILL.md) | Conduct a broad, source-grounded investigation when one is needed. |
+| Shared | [`debug-ledger`](debug-ledger/SKILL.md) | Reproduce a failure and preserve a concise verified case. |
+| Shared | [`skill-garden`](skill-garden/SKILL.md) | Choose skills and maintain the library from observed lessons. |
+| Shared | [`bilingual-writing`](bilingual-writing/SKILL.md) | Edit Chinese or English research or literary prose. |
 
-Copy the desired folder into your Codex skills directory. Each folder has a `SKILL.md`; the references are loaded only when needed. No third-party skill text, raw market data, tokens, or private résumé is included. The [skill audit](SKILL_AUDIT.md) explains how these skills relate to other installed and available tools.
+`project-start` is the common entrance. It chooses one primary domain and adds focused or shared skills only for actual subtasks. Platform and asset differences stay in `quant-projects` until repeated work warrants a narrower skill. The [skill audit](SKILL_AUDIT.md) records boundaries and remaining external skills.
 
-The methods intentionally keep results separate from claims: a source idea, an implementation choice, and a measured result are different things. See the companion [QR Factor Lab](https://github.com/caraheqy-hub/qr-factor-lab) for a small working example.
+Copy a desired folder into the Codex skills directory. Optional local skills such as `juejinquant` and `agent-output-system` are referenced when relevant but are not bundled here. The external `juejinquant` text and licensed market data are not republished in this repository.
