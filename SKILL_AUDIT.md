@@ -65,7 +65,7 @@
 | --- | --- |
 | `qr_factor_lab/` | 可运行的 A 股因子研究代码；`src/` 是程序，`tests/` 是 6 个时点与计算测试，`research/` 是 19 份研报与 34 个候选索引，`reports/` 和 `results/` 是一项公式复现及探索结果 |
 | `qr_factor_lab/data/` | 本地掘金行情与来源记录；受许可约束，Git 忽略；公开版可用 `demo-data` 生成合成样本 |
-| `project-craft/`、`factor-mining/`、`debug-ledger/`、`skill-garden/`、`source-research/`、`bilingual-writing/` | 六个自写技能；`debug-ledger/references/cases.md` 是错题本 |
+| `quant-research-skills/` 内的六个技能文件夹 | 自写技能；其中 `debug-ledger/references/cases.md` 是错题本。前三个技能在 `outputs/` 还保留了单独的本地副本 |
 | `cara-he-research-7954eefd5d4c1e7c/` | 静态求职网页，`index.html`、`styles.css`、`robots.txt`，以 GitHub Pages 发布 |
 | `quant-research-skills/` | 六个自写技能的公开仓库副本和使用说明 |
 
